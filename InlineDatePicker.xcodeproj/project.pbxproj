@@ -10,8 +10,13 @@
 		665B62021E267D4000D6D908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B62011E267D4000D6D908 /* AppDelegate.swift */; };
 		665B62041E267D4000D6D908 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B62031E267D4000D6D908 /* ViewController.swift */; };
 		665B62071E267D4000D6D908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665B62051E267D4000D6D908 /* Main.storyboard */; };
-		665B62091E267D4000D6D908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665B62081E267D4000D6D908 /* Assets.xcassets */; };
 		665B620C1E267D4000D6D908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665B620A1E267D4000D6D908 /* LaunchScreen.storyboard */; };
+		665B62181E26800700D6D908 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B62171E26800700D6D908 /* Person.swift */; };
+		665B621C1E26829100D6D908 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B621A1E26829100D6D908 /* TextFieldTableViewCell.swift */; };
+		665B621D1E26829100D6D908 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665B621B1E26829100D6D908 /* TextFieldTableViewCell.xib */; };
+		665B621F1E2685F300D6D908 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665B621E1E2685F300D6D908 /* Media.xcassets */; };
+		665B62221E268EF100D6D908 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B62201E268EF100D6D908 /* DatePickerTableViewCell.swift */; };
+		665B62231E268EF100D6D908 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665B62211E268EF100D6D908 /* DatePickerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +24,14 @@
 		665B62011E267D4000D6D908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665B62031E267D4000D6D908 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		665B62061E267D4000D6D908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		665B62081E267D4000D6D908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		665B620B1E267D4000D6D908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		665B620D1E267D4000D6D908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665B62171E26800700D6D908 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		665B621A1E26829100D6D908 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		665B621B1E26829100D6D908 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		665B621E1E2685F300D6D908 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		665B62201E268EF100D6D908 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		665B62211E268EF100D6D908 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,59 @@
 		665B62001E267D4000D6D908 /* InlineDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				665B62011E267D4000D6D908 /* AppDelegate.swift */,
-				665B62031E267D4000D6D908 /* ViewController.swift */,
-				665B62051E267D4000D6D908 /* Main.storyboard */,
-				665B62081E267D4000D6D908 /* Assets.xcassets */,
-				665B620A1E267D4000D6D908 /* LaunchScreen.storyboard */,
-				665B620D1E267D4000D6D908 /* Info.plist */,
+				665B62191E26827200D6D908 /* Views */,
+				665B62161E267FAF00D6D908 /* Storyboards */,
+				665B62151E267FA700D6D908 /* App and Resources */,
+				665B62141E267F9800D6D908 /* Model */,
+				665B62131E267F8F00D6D908 /* View Controllers */,
 			);
 			path = InlineDatePicker;
+			sourceTree = "<group>";
+		};
+		665B62131E267F8F00D6D908 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				665B62031E267D4000D6D908 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		665B62141E267F9800D6D908 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				665B62171E26800700D6D908 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		665B62151E267FA700D6D908 /* App and Resources */ = {
+			isa = PBXGroup;
+			children = (
+				665B621E1E2685F300D6D908 /* Media.xcassets */,
+				665B620D1E267D4000D6D908 /* Info.plist */,
+				665B62011E267D4000D6D908 /* AppDelegate.swift */,
+			);
+			name = "App and Resources";
+			sourceTree = "<group>";
+		};
+		665B62161E267FAF00D6D908 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				665B62051E267D4000D6D908 /* Main.storyboard */,
+				665B620A1E267D4000D6D908 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		665B62191E26827200D6D908 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				665B621A1E26829100D6D908 /* TextFieldTableViewCell.swift */,
+				665B621B1E26829100D6D908 /* TextFieldTableViewCell.xib */,
+				665B62201E268EF100D6D908 /* DatePickerTableViewCell.swift */,
+				665B62211E268EF100D6D908 /* DatePickerTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +179,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665B621F1E2685F300D6D908 /* Media.xcassets in Resources */,
 				665B620C1E267D4000D6D908 /* LaunchScreen.storyboard in Resources */,
-				665B62091E267D4000D6D908 /* Assets.xcassets in Resources */,
 				665B62071E267D4000D6D908 /* Main.storyboard in Resources */,
+				665B621D1E26829100D6D908 /* TextFieldTableViewCell.xib in Resources */,
+				665B62231E268EF100D6D908 /* DatePickerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665B62181E26800700D6D908 /* Person.swift in Sources */,
 				665B62041E267D4000D6D908 /* ViewController.swift in Sources */,
 				665B62021E267D4000D6D908 /* AppDelegate.swift in Sources */,
+				665B621C1E26829100D6D908 /* TextFieldTableViewCell.swift in Sources */,
+				665B62221E268EF100D6D908 /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
