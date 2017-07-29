@@ -2,7 +2,7 @@
 
 Unlike most date pickers found in web applications, iOS UIDatePicker is one of the most bulkier controls in the standard UIKit library, and among the most difficult ones to integrate in a screen when multiple controls are required, maybe alongside several text fields in charge of collecting information. That's why Apple wisely decided to make them less obnoxious by hiding them until you need them by means of a clever animation.
 
-![http://digitalleaves.com/blog/wp-content/uploads/2017/01/DynamicUIDatePicker.gif](http://digitalleaves.com/blog/wp-content/uploads/2017/01/DynamicUIDatePicker.gif)
+![http://digitalleaves.com/blog/wp-content/uploads/2017/01/DynamicUIDatePicker.gif](http://digitalleaves.com/wp-content/uploads/2017/01/DynamicUIDatePicker.gif)
 
 Usually, Apple iOS applications collecting data or presenting the user a set of settings, where information needs to be provided by the user, employ a smart animation in which any time or date field is shown as a textfield or label in a row inside a table view (with the rest of the UITextFields in other rows) and then, when you click on that row, an animation will reveal a hidden UIDatePicker below. The illusion works well and the user is intuitively led to choose a date or time associated to that field.
 
